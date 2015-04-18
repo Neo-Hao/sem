@@ -45,13 +45,13 @@
 <p>Metrics:</p>
 
 <pre><code>CMIN --- CMIN/DF: < 3 (good); < 5 (OK)
-  CMIN --- P: > .5
-  RMR,GFI --- GFI: >.95
-  RMR,GFI --- AGFI: >.80
-  Baseline Comparison --- CFI: >.95 (good); > .90 (OK); > .80 (barely OK)
-  Parsimeay-Adjusted Measure --- PCFI: >.80
-  RMSEA --- RMSEA: <.05 (good); >.05 && <.10 (OK); >.10 (barely OK)
-  RMSEA --- PCLOSE: >.05
+CMIN --- P: > .5
+RMR,GFI --- GFI: >.95
+RMR,GFI --- AGFI: >.80
+Baseline Comparison --- CFI: >.95 (good); > .90 (OK); > .80 (barely OK)
+Parsimeay-Adjusted Measure --- PCFI: >.80
+RMSEA --- RMSEA: <.05 (good); >.05 && <.10 (OK); >.10 (barely OK)
+RMSEA --- PCLOSE: >.05
 </code></pre>
 
 <p>CMIN/DF and P-value together tell you whether you model has a good fit; if the result is not within the range of metrics while you have a big number of sample, it is OK.</p>
@@ -64,20 +64,39 @@
 
 <p>Go to <i>Estimates</i> >>> <i>Matrices</i> >>> <i>Standard Residue Covariances</i> and look for big numbers above or close to 2.58. Remove the variable that causes problems.</p>
 
-<h3>
-<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<h2><a id="model" class="anchor" href="#model-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model Test</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h3><a id="validity" class="anchor" href="#validity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Validity and Reliability</h3>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>Metrics (for every factor):</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<pre><code>CR > .70
+AVE > .50
+MSV < AVE
+ASV < AVE
+</code></pre>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>If you have convergent validity issues, then your variables do not correlate well with each other within their parent factor. Stop using CFA.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<h3><a id="validity" class="anchor" href="#validity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Validity and Reliability</h3>
+
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/yk6DVC7Wg7g" frameborder="0" allowfullscreen></iframe></p>
+
+<p>Metrics (for every factor):</p>
+
+<pre><code>CR > .70
+AVE > .50
+MSV < AVE
+ASV < AVE
+</code></pre>
+
+<p>If you have convergent validity issues, then your variables do not correlate well with each other within their parent factor. Stop using CFA.</p>
+
+<h3><a id="validity" class="anchor" href="#optional-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>Optional Tests</h3>
+
+<p>Common Method Bias</p>
+<p>Measurement Model Invariance</p>
+
         </section>
 
         <footer>
